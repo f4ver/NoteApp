@@ -51,6 +51,7 @@
             this.createdLabel = new System.Windows.Forms.Label();
             this.modifiedLabel = new System.Windows.Forms.Label();
             this.notesTextBox = new System.Windows.Forms.RichTextBox();
+            this.CategoryComboBox = new System.Windows.Forms.ComboBox();
             this.optionsMenu.SuspendLayout();
             this.SuspendLayout();
             // 
@@ -82,7 +83,7 @@
             // 
             this.exitToolStripMenuItem.Name = "exitToolStripMenuItem";
             this.exitToolStripMenuItem.ShortcutKeys = ((System.Windows.Forms.Keys)((System.Windows.Forms.Keys.Alt | System.Windows.Forms.Keys.F4)));
-            this.exitToolStripMenuItem.Size = new System.Drawing.Size(180, 22);
+            this.exitToolStripMenuItem.Size = new System.Drawing.Size(135, 22);
             this.exitToolStripMenuItem.Text = "Exit";
             this.exitToolStripMenuItem.Click += new System.EventHandler(this.exitToolStripMenuItem_Click);
             // 
@@ -269,12 +270,22 @@
             this.notesTextBox.Size = new System.Drawing.Size(541, 347);
             this.notesTextBox.TabIndex = 13;
             this.notesTextBox.Text = "";
+            this.notesTextBox.TextChanged += new System.EventHandler(this.notesTextBox_TextChanged);
+            // 
+            // CategoryComboBox
+            // 
+            this.CategoryComboBox.FormattingEnabled = true;
+            this.CategoryComboBox.Location = new System.Drawing.Point(301, 50);
+            this.CategoryComboBox.Name = "CategoryComboBox";
+            this.CategoryComboBox.Size = new System.Drawing.Size(121, 21);
+            this.CategoryComboBox.TabIndex = 15;
             // 
             // NoteApp
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.ClientSize = new System.Drawing.Size(800, 450);
+            this.Controls.Add(this.CategoryComboBox);
             this.Controls.Add(this.notesTextBox);
             this.Controls.Add(this.modifiedLabel);
             this.Controls.Add(this.createdLabel);
@@ -324,6 +335,7 @@
         private System.Windows.Forms.Label createdLabel;
         private System.Windows.Forms.Label modifiedLabel;
         private System.Windows.Forms.RichTextBox notesTextBox;
+        private System.Windows.Forms.ComboBox CategoryComboBox;
     }
 }
 

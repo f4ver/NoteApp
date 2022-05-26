@@ -10,3 +10,13 @@ C:\Users\5891_foi\Downloads\NoteApp-features-2_add_forms_layout\NoteApp-features
 C:\Users\5891_foi\Downloads\NoteApp-features-2_add_forms_layout\NoteApp-features-2_add_forms_layout\src\NoteApp.View\obj\Debug\NoteApp.View.pdb
 C:\Users\5891_foi\Downloads\NoteApp-features-2_add_forms_layout\NoteApp-features-2_add_forms_layout\src\NoteApp.View\obj\Debug\NoteApp.View.NoteForm.resources
 C:\Users\5891_foi\Downloads\NoteApp-features-2_add_forms_layout\NoteApp-features-2_add_forms_layout\src\NoteApp.View\obj\Debug\NoteApp.View.AboutForm.resources
+C:\Users\ofili\Desktop\NoteApp1\src\NoteApp.View\obj\Debug\NoteApp.View.csproj.AssemblyReference.cache
+C:\Users\ofili\Desktop\NoteApp1\src\NoteApp.View\obj\Debug\NoteApp.View.csproj.SuggestedBindingRedirects.cache
+C:\Users\ofili\Desktop\NoteApp1\src\NoteApp.View\obj\Debug\NoteApp.View.NoteApp.resources
+C:\Users\ofili\Desktop\NoteApp1\src\NoteApp.View\obj\Debug\NoteApp.View.NoteForm.resources
+C:\Users\ofili\Desktop\NoteApp1\src\NoteApp.View\obj\Debug\NoteApp.View.AboutForm.resources
+C:\Users\ofili\Desktop\NoteApp1\src\NoteApp.View\obj\Debug\NoteApp.View.Properties.Resources.resources
+C:\Users\ofili\Desktop\NoteApp1\src\NoteApp.View\obj\Debug\NoteApp.View.csproj.GenerateResource.cache
+C:\Users\ofili\Desktop\NoteApp1\src\NoteApp.View\obj\Debug\NoteApp.View.csproj.CoreCompileInputs.cache
+C:\Users\ofili\Desktop\NoteApp1\src\NoteApp.View\obj\Debug\NoteApp.View.exe
+C:\Users\ofili\Desktop\NoteApp1\src\NoteApp.View\obj\Debug\NoteApp.View.pdb
