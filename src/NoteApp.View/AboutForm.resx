@@ -117,17 +117,29 @@
   <resheader name="writer">
     <value>System.Resources.ResXResourceWriter, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
   </resheader>
-  <assembly alias="System.Windows.Forms" name="System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089" />
-  <data name="icons8-trash-can-36" type="System.Resources.ResXFileRef, System.Windows.Forms">
-    <value>..\Resources\icons8-trash-can-36.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
-  </data>
-  <data name="icons8-insert-page-36" type="System.Resources.ResXFileRef, System.Windows.Forms">
-    <value>..\Resources\icons8-insert-page-36.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
-  </data>
-  <data name="icons8-create-36" type="System.Resources.ResXFileRef, System.Windows.Forms">
-    <value>..\Resources\icons8-create-36.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
-  </data>
-  <data name="icons8-notepad-100" type="System.Resources.ResXFileRef, System.Windows.Forms">
-    <value>..\Resources\icons8-notepad-100.ico;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  <assembly alias="System.Drawing" name="System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a" />
+  <data name="$this.Icon" type="System.Drawing.Icon, System.Drawing" mimetype="application/x-microsoft.net.object.bytearray.base64">
+    <value>
+        AAABAAEAEBAAAAEAIABoBAAAFgAAACgAAAAQAAAAIAAAAAEAIAAAAAAAAAQAAAAAAAAAAAAAAAAAAAAA
+        AAArn98YKI7TcyiO03MojtNzKI7TcyiO03MojtNzKI7TcyiO03MojtNzKI7TcyiO03MojtNzKI7TcyiO
+        03Mrn98YLJvrQCiO0/8lg8X/JYPF/yWDxf8lg8X/JYPF/yWDxf8lg8X/JYPF/yWDxf8lg8X/JYPF/yWD
+        xf8ojtP/LJvrQCyb60Alhcn/DTto/ztcb/9KZ3L/Smdy/0pncv87XG//DTto/w07aP8NO2j/DTto/w07
+        aP8NO2j/JYXJ/yyb60Asm+tAJYXJ/w07aP/Dv4b/9c9S//vedf/301v/w7+G/w07aP+Fm6//rbzI/628
+        yP9+laz/DTto/yWFyf8sm+tALJvrQCWFyf8NO2j/w7+G//rabf/412T/9c9S/8O/hv8NO2j/sb7J/+jq
+        6v/o6ur/7u/v/zRbgP8lhcn/LJvrQCyb60Alhcn/DTto/5aefv/Dv4b/w7+G/8O/hv+Wnn7/DTto/7G+
+        yf/o6ur/6Orq/+jq6v9EZ4n/JYXJ/yyb60Asm+tAJYXJ/w07aP8NO2j/DTto/w49a/8UUIT/DTto/w07
+        aP+Fm6//qrrN/6S21v+tvMj/NluA/yWFyf8sm+tALJvrQCWFyf8NO2j/GF2W/yWCx/8rmeT/LZ3p/xhe
+        lv8PQnH/DTto/yZQf/9Wea//DTto/w07aP8lhcn/LJvrQCyb60Alhcn/DTto/yeIz/8smuX/LZzp/y2d
+        6v8pk9v/FE+C/w07aP8NO2j/DTto/w07aP8NO2j/JYXJ/yyb60Asm+tAJYXJ/w07aP8da6j/K5fh/yqW
+        3/8rld//K5jj/xRPgv9RWdr/aGL//2hi//9oYv//JEWO/yWFyf8sm+tALJvrQCWFyf8NO2j/E0x//zGb
+        5P8ynef/LZzo/yuW3/8UT4L/UVna/2hi//9oYv//aGL//yRFjv8lhcn/LJvrQCyb60Alhcn/DTto/w07
+        aP80hsL/bJ3B/x5wrv8ecK3/EUl5/y9Kof9Ybcj/b4LX/zpOtP8YQHv/JYXJ/yyb60Asm+tAJYXJ/w07
+        aP8NO2j/DTto/1lev/8POmz/DTto/w07aP8NO2j/HUl4/y1WiP8NO2j/DTto/yWFyf8sm+tALJvrQCWF
+        yf8NO2j/DTto/w07aP8lQ4n/DTtp/w07aP8NO2j/DTto/w07aP8NO2j/DTto/w07aP8lhcn/LJvrQCyb
+        60AojtP/JYPF/yWDxf8lg8X/JYPF/yWDxf8lg8X/JYPF/yWDxf8lg8X/JYPF/yWDxf8lg8X/KI7T/yyb
+        60Arn98YKI7TcyiO03MojtNzKI7TcyiO03MojtNzKI7TcyiO03MojtNzKI7TcyiO03MojtNzKI7TcyiO
+        03Mrn98YAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA
+        AAAAAAAAAAAAAA==
+</value>
   </data>
 </root>

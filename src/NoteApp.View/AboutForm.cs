@@ -8,16 +8,22 @@ using System.Text;
 using System.Threading.Tasks;
 using System.Windows.Forms;
 
-namespace NoteApp.View
+namespace NoteApp
 {
+    /// <summary>
+    /// Форма с информацией об авторе.
+    /// </summary>
     public partial class AboutForm : Form
     {
+        /// <summary>
+        /// Инициализация класса
+        /// </summary>
         public AboutForm()
         {
             InitializeComponent();
         }
 
-        private void linkLabel2_LinkClicked(object sender, LinkLabelLinkClickedEventArgs e)
+        private void AboutForm_Load(object sender, EventArgs e)
         {
 
         }

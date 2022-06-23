@@ -2,9 +2,9 @@
 ; SEE THE DOCUMENTATION FOR DETAILS ON CREATING INNO SETUP SCRIPT FILES!
 
 #define MyAppName "NoteApp"
-#define MyAppVersion "1.0"
+#define MyAppVersion "1.0.0"
 #define MyAppURL "https://github.com/f4ver/NoteApp"
-#define MyAppExeName "NoteApp.View.exe"
+#define MyAppExeName "NoteApp.exe"
 #define MyAppAssocName MyAppName + " File"
 #define MyAppAssocExt ".myp"
 #define MyAppAssocKey StringChange(MyAppAssocName, " ", "") + MyAppAssocExt
@@ -12,7 +12,7 @@
 [Setup]
 ; NOTE: The value of AppId uniquely identifies this application. Do not use the same AppId value in installers for other applications.
 ; (To generate a new GUID, click Tools | Generate GUID inside the IDE.)
-AppId={{AFCBB609-1DEB-4E2E-88C3-479692F4E2B6}
+AppId={{D9A91F0A-C52A-4639-B1EB-A382C085CFDE}
 AppName={#MyAppName}
 AppVersion={#MyAppVersion}
 ;AppVerName={#MyAppName} {#MyAppVersion}
@@ -24,7 +24,7 @@ ChangesAssociations=yes
 DefaultGroupName={#MyAppName}
 ; Uncomment the following line to run in non administrative install mode (install for current user only.)
 ;PrivilegesRequired=lowest
-OutputBaseFilename=setup
+OutputBaseFilename=Setup
 Compression=lzma
 SolidCompression=yes
 WizardStyle=modern
@@ -37,14 +37,13 @@ Name: "russian"; MessagesFile: "compiler:Languages\Russian.isl"
 Name: "desktopicon"; Description: "{cm:CreateDesktopIcon}"; GroupDescription: "{cm:AdditionalIcons}"; Flags: unchecked
 
 [Files]
-Source: "..\src\NoteApp\NoteApp.View\bin\Debug\{#MyAppExeName}"; DestDir: "{app}"; Flags: ignoreversion
-Source: "..\src\NoteApp\NoteApp.View\bin\Debug\Newtonsoft.Json.dll"; DestDir: "{app}"; Flags: ignoreversion
-Source: "..\src\NoteApp\NoteApp.View\bin\Debug\Newtonsoft.Json.xml"; DestDir: "{app}"; Flags: ignoreversion
-Source: "..\src\NoteApp\NoteApp.View\bin\Debug\NoteApp.Model.dll"; DestDir: "{app}"; Flags: ignoreversion
-Source: "..\src\NoteApp\NoteApp.View\bin\Debug\NoteApp.Model.pdb"; DestDir: "{app}"; Flags: ignoreversion
-Source: "..\src\NoteApp\NoteApp.View\bin\Debug\NoteApp.View.exe"; DestDir: "{app}"; Flags: ignoreversion
-Source: "..\src\NoteApp\NoteApp.View\bin\Debug\NoteApp.View.exe.config"; DestDir: "{app}"; Flags: ignoreversion
-Source: "..\src\NoteApp\NoteApp.View\bin\Debug\NoteApp.View.pdb"; DestDir: "{app}"; Flags: ignoreversion
+Source: "C:\Users\ofili\source\repos\ASD\src\NoteApp.View\bin\Debug\{#MyAppExeName}"; DestDir: "{app}"; Flags: ignoreversion
+Source: "C:\Users\ofili\source\repos\ASD\src\NoteApp.View\bin\Debug\Newtonsoft.Json.dll"; DestDir: "{app}"; Flags: ignoreversion
+Source: "C:\Users\ofili\source\repos\ASD\src\NoteApp.View\bin\Debug\Newtonsoft.Json.xml"; DestDir: "{app}"; Flags: ignoreversion
+Source: "C:\Users\ofili\source\repos\ASD\src\NoteApp.View\bin\Debug\NoteApp.exe.config"; DestDir: "{app}"; Flags: ignoreversion
+Source: "C:\Users\ofili\source\repos\ASD\src\NoteApp.View\bin\Debug\NoteApp.Model.dll"; DestDir: "{app}"; Flags: ignoreversion
+Source: "C:\Users\ofili\source\repos\ASD\src\NoteApp.View\bin\Debug\NoteApp.Model.pdb"; DestDir: "{app}"; Flags: ignoreversion
+Source: "C:\Users\ofili\source\repos\ASD\src\NoteApp.View\bin\Debug\NoteApp.pdb"; DestDir: "{app}"; Flags: ignoreversion
 ; NOTE: Don't use "Flags: ignoreversion" on any shared system files
 
 [Registry]

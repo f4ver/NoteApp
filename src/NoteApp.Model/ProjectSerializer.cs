@@ -15,7 +15,7 @@ namespace NoteApp.Model
     public class ProjectSerializer
     {
         /// <summary>
-        /// Экземляр класса потока.
+        /// Экземпляр класса потока.
         /// </summary>
         private Stream _stream;
 
@@ -27,13 +27,14 @@ namespace NoteApp.Model
         /// <summary>
         /// Сохраняет данные из экземпляра класса в userdata.json.
         /// </summary>
+        /// <param name="project">Сохранённый экземпляр класса Project.</param>
         public void SaveToFile(Project project)
         {
             if (!(Directory.Exists(GetFolderPath(SpecialFolder.ApplicationData)
-                + "\\vmi\\NoteApp")))
+                + "\\foi\\NoteApp")))
             {
                 Directory.CreateDirectory(GetFolderPath(SpecialFolder.ApplicationData)
-                    + "\\vmi\\NoteApp");
+                    + "\\foi\\NoteApp");
                 if (!File.Exists(FileName))
                 {
                     File.Create(FileName);
@@ -49,19 +50,19 @@ namespace NoteApp.Model
                 }
             }
         }
-
+        
         /// <summary>
-        /// Загружает данные их userdata.json в экземпляр класса Project.
+        /// Загружает данные из userdata.json в экземпляр класса Project.
         /// </summary>
-        /// <returns>Инициализированный экземпляр класса Project.</returns>
+        /// <returns>Инициализованный экземпляр класса Project.</returns>
         public Project LoadFromFile()
         {
             Project project = null;
             if (!(Directory.Exists(GetFolderPath(SpecialFolder.ApplicationData)
-                + "\\vmi\\NoteApp")))
+                + "\\foi\\NoteApp")))
             {
                 Directory.CreateDirectory(GetFolderPath(SpecialFolder.ApplicationData)
-                    + "\\vmi\\NoteApp");
+                    + "\\foi\\NoteApp");
                 if (!File.Exists(FileName))
                 {
                     File.Create(FileName);
@@ -91,12 +92,12 @@ namespace NoteApp.Model
         }
 
         /// <summary>
-        /// Создает пустой экземпляр <see cref="ProjectSerializer">. 
+        /// Создает пустой экземпляр <see cref="ProjectSerializer">
         /// </summary>
         public ProjectSerializer()
         {
             FileName = GetFolderPath(SpecialFolder.ApplicationData)
-                    + "\\vmi\\NoteApp\\notes.json";
+                + "\\foi\\NoteApp\\notes.json";
         }
     }
 }
