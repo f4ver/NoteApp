@@ -37,13 +37,13 @@ Name: "russian"; MessagesFile: "compiler:Languages\Russian.isl"
 Name: "desktopicon"; Description: "{cm:CreateDesktopIcon}"; GroupDescription: "{cm:AdditionalIcons}"; Flags: unchecked
 
 [Files]
-Source: "C:\Users\ofili\source\repos\ASD\src\NoteApp.View\bin\Debug\{#MyAppExeName}"; DestDir: "{app}"; Flags: ignoreversion
-Source: "C:\Users\ofili\source\repos\ASD\src\NoteApp.View\bin\Debug\Newtonsoft.Json.dll"; DestDir: "{app}"; Flags: ignoreversion
-Source: "C:\Users\ofili\source\repos\ASD\src\NoteApp.View\bin\Debug\Newtonsoft.Json.xml"; DestDir: "{app}"; Flags: ignoreversion
-Source: "C:\Users\ofili\source\repos\ASD\src\NoteApp.View\bin\Debug\NoteApp.exe.config"; DestDir: "{app}"; Flags: ignoreversion
-Source: "C:\Users\ofili\source\repos\ASD\src\NoteApp.View\bin\Debug\NoteApp.Model.dll"; DestDir: "{app}"; Flags: ignoreversion
-Source: "C:\Users\ofili\source\repos\ASD\src\NoteApp.View\bin\Debug\NoteApp.Model.pdb"; DestDir: "{app}"; Flags: ignoreversion
-Source: "C:\Users\ofili\source\repos\ASD\src\NoteApp.View\bin\Debug\NoteApp.pdb"; DestDir: "{app}"; Flags: ignoreversion
+Source: "..\src\NoteApp.View\bin\Debug\{#MyAppExeName}"; DestDir: "{app}"; Flags: ignoreversion
+Source: "..\src\NoteApp.View\bin\Debug\Newtonsoft.Json.dll"; DestDir: "{app}"; Flags: ignoreversion
+Source: "..\src\NoteApp.View\bin\Debug\Newtonsoft.Json.xml"; DestDir: "{app}"; Flags: ignoreversion
+Source: "..\src\NoteApp.View\bin\Debug\NoteApp.exe.config"; DestDir: "{app}"; Flags: ignoreversion
+Source: "..\src\NoteApp.View\bin\Debug\NoteApp.Model.dll"; DestDir: "{app}"; Flags: ignoreversion
+Source: "..\src\NoteApp.View\bin\Debug\NoteApp.Model.pdb"; DestDir: "{app}"; Flags: ignoreversion
+Source: "..\src\NoteApp.View\bin\Debug\NoteApp.pdb"; DestDir: "{app}"; Flags: ignoreversion
 ; NOTE: Don't use "Flags: ignoreversion" on any shared system files
 
 [Registry]
