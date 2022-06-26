@@ -14,6 +14,8 @@ namespace NoteApp.Model
     /// </summary>
     public class ProjectSerializer
     {
+        private static readonly string _path = Environment.GetFolderPath(Environment.SpecialFolder.ApplicationData) + "\\foi\\NoteApp";
+
         /// <summary>
         /// Экземпляр класса потока.
         /// </summary>
@@ -30,11 +32,9 @@ namespace NoteApp.Model
         /// <param name="project">Сохранённый экземпляр класса Project.</param>
         public void SaveToFile(Project project)
         {
-            if (!(Directory.Exists(GetFolderPath(SpecialFolder.ApplicationData)
-                + "\\foi\\NoteApp")))
+            if (!(Directory.Exists(_path)))
             {
-                Directory.CreateDirectory(GetFolderPath(SpecialFolder.ApplicationData)
-                    + "\\foi\\NoteApp");
+                Directory.CreateDirectory(_path);
                 if (!File.Exists(FileName))
                 {
                     File.Create(FileName);
@@ -58,11 +58,9 @@ namespace NoteApp.Model
         public Project LoadFromFile()
         {
             Project project = null;
-            if (!(Directory.Exists(GetFolderPath(SpecialFolder.ApplicationData)
-                + "\\foi\\NoteApp")))
+            if (!(Directory.Exists(_path)))
             {
-                Directory.CreateDirectory(GetFolderPath(SpecialFolder.ApplicationData)
-                    + "\\foi\\NoteApp");
+                Directory.CreateDirectory(_path);
                 if (!File.Exists(FileName))
                 {
                     File.Create(FileName);
@@ -96,8 +94,7 @@ namespace NoteApp.Model
         /// </summary>
         public ProjectSerializer()
         {
-            FileName = GetFolderPath(SpecialFolder.ApplicationData)
-                + "\\foi\\NoteApp\\notes.json";
+            FileName = _path + "\\notes.json";
         }
     }
 }

@@ -37,8 +37,8 @@
             this.ModifiedLabel = new System.Windows.Forms.Label();
             this.CreatedDateTimePicker = new System.Windows.Forms.DateTimePicker();
             this.ModifiedDateTimePicker = new System.Windows.Forms.DateTimePicker();
-            this.OkButton = new System.Windows.Forms.Button();
-            this.CancelButton = new System.Windows.Forms.Button();
+            this.AcceptButton = new System.Windows.Forms.Button();
+            this.CloseButton = new System.Windows.Forms.Button();
             this.MainTextBox = new System.Windows.Forms.TextBox();
             this.SuspendLayout();
             // 
@@ -122,27 +122,27 @@
             this.ModifiedDateTimePicker.Size = new System.Drawing.Size(105, 20);
             this.ModifiedDateTimePicker.TabIndex = 7;
             // 
-            // OkButton
+            // AcceptButton
             // 
-            this.OkButton.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Bottom | System.Windows.Forms.AnchorStyles.Right)));
-            this.OkButton.Location = new System.Drawing.Point(442, 452);
-            this.OkButton.Name = "OkButton";
-            this.OkButton.Size = new System.Drawing.Size(75, 23);
-            this.OkButton.TabIndex = 9;
-            this.OkButton.Text = "OK";
-            this.OkButton.UseVisualStyleBackColor = true;
-            this.OkButton.Click += new System.EventHandler(this.OkButton_Click);
+            this.AcceptButton.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Bottom | System.Windows.Forms.AnchorStyles.Right)));
+            this.AcceptButton.Location = new System.Drawing.Point(442, 452);
+            this.AcceptButton.Name = "AcceptButton";
+            this.AcceptButton.Size = new System.Drawing.Size(75, 23);
+            this.AcceptButton.TabIndex = 9;
+            this.AcceptButton.Text = "OK";
+            this.AcceptButton.UseVisualStyleBackColor = true;
+            this.AcceptButton.Click += new System.EventHandler(this.OkButton_Click);
             // 
-            // CancelButton
+            // CloseButton
             // 
-            this.CancelButton.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Bottom | System.Windows.Forms.AnchorStyles.Right)));
-            this.CancelButton.Location = new System.Drawing.Point(523, 452);
-            this.CancelButton.Name = "CancelButton";
-            this.CancelButton.Size = new System.Drawing.Size(75, 23);
-            this.CancelButton.TabIndex = 10;
-            this.CancelButton.Text = "Cancel";
-            this.CancelButton.UseVisualStyleBackColor = true;
-            this.CancelButton.Click += new System.EventHandler(this.CancelButton_Click);
+            this.CloseButton.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Bottom | System.Windows.Forms.AnchorStyles.Right)));
+            this.CloseButton.Location = new System.Drawing.Point(523, 452);
+            this.CloseButton.Name = "CloseButton";
+            this.CloseButton.Size = new System.Drawing.Size(75, 23);
+            this.CloseButton.TabIndex = 10;
+            this.CloseButton.Text = "Cancel";
+            this.CloseButton.UseVisualStyleBackColor = true;
+            this.CloseButton.Click += new System.EventHandler(this.CancelButton_Click);
             // 
             // MainTextBox
             // 
@@ -159,8 +159,8 @@
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.ClientSize = new System.Drawing.Size(610, 487);
             this.Controls.Add(this.MainTextBox);
-            this.Controls.Add(this.CancelButton);
-            this.Controls.Add(this.OkButton);
+            this.Controls.Add(this.CloseButton);
+            this.Controls.Add(this.AcceptButton);
             this.Controls.Add(this.ModifiedDateTimePicker);
             this.Controls.Add(this.CreatedDateTimePicker);
             this.Controls.Add(this.ModifiedLabel);
@@ -187,8 +187,8 @@
         private System.Windows.Forms.Label ModifiedLabel;
         private System.Windows.Forms.DateTimePicker CreatedDateTimePicker;
         private System.Windows.Forms.DateTimePicker ModifiedDateTimePicker;
-        private System.Windows.Forms.Button OkButton;
-        private System.Windows.Forms.Button CancelButton;
+        private System.Windows.Forms.Button AcceptButton;
+        private System.Windows.Forms.Button CloseButton;
         private System.Windows.Forms.TextBox MainTextBox;
     }
 }

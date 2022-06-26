@@ -41,7 +41,7 @@ namespace NoteApp.View
         {
             InitializeComponent();
             _project = _projectSerializer.LoadFromFile();
-            CategoryComboBox.SelectedIndex = 0;
+            CategoryTitleComboBox.SelectedIndex = 0;
             ClearSelectedNote();
         }
 
@@ -66,10 +66,10 @@ namespace NoteApp.View
         /// </summary>
         private void OutputByCategory()
         {
-            if (CategoryComboBox.SelectedItem.ToString() != _allCategory)
+            if (CategoryTitleComboBox.SelectedItem.ToString() != _allCategory)
             {
                 NoteCategory noteCategory = (NoteCategory)Enum.Parse(typeof(NoteCategory),
-                    CategoryComboBox.GetItemText(CategoryComboBox.SelectedItem));
+                    CategoryTitleComboBox.GetItemText(CategoryTitleComboBox.SelectedItem));
                 _currentNotes = _project.SearchByCategory(_project.Notes, noteCategory);
             }
             else
@@ -83,11 +83,11 @@ namespace NoteApp.View
         /// </summary>
         private void UpdateListBox()
         {
-            AllNotesListBox.Items.Clear();
+            NotesListBox.Items.Clear();
             _currentNotes = _project.SortByModificationTime(_currentNotes);
             for (int i = 0; i < _currentNotes.Count; i++)
             {
-                AllNotesListBox.Items.Add(_currentNotes[i].Title);
+                NotesListBox.Items.Add(_currentNotes[i].Title);
             }
         }
 
@@ -102,9 +102,9 @@ namespace NoteApp.View
                 return;
             }
             Note selectedNote = _currentNotes[index];
-            NotesTextBox.Text = selectedNote.Text;
-            ContentLabel.Text = selectedNote.Title;
-            CategoryAnswerLabel.Text = selectedNote.Category.ToString();
+            NoteTextPlace.Text = selectedNote.Text;
+            ContentLabelTitle.Text = selectedNote.Title;
+            CategoryAnswerTitle.Text = selectedNote.Category.ToString();
             CreatedDateTimePicker.Visible = true;
             ModifiedDateTimePicker.Visible = true;
             CreatedDateTimePicker.Value = selectedNote.CreatedAt;
@@ -116,9 +116,9 @@ namespace NoteApp.View
         /// </summary>
         private void ClearSelectedNote()
         {
-            ContentLabel.Text = "";
-            CategoryAnswerLabel.Text = "";
-            NotesTextBox.Text = "";
+            ContentLabelTitle.Text = "";
+            CategoryAnswerTitle.Text = "";
+            NoteTextPlace.Text = "";
             CreatedDateTimePicker.Visible = false;
             ModifiedDateTimePicker.Visible = false;
         }
@@ -135,7 +135,7 @@ namespace NoteApp.View
                 _project.Notes.Add(noteForm.Note);
                 OutputByCategory();
                 UpdateListBox();
-                AllNotesListBox.SelectedIndex = 0;
+                NotesListBox.SelectedIndex = 0;
                 _projectSerializer.SaveToFile(_project);
             }   
         }
@@ -160,11 +160,11 @@ namespace NoteApp.View
             {
                 currentIndex = 0;
                 OutputByCategory();
-                UpdateSelectedNote(AllNotesListBox.SelectedIndex);
+                UpdateSelectedNote(NotesListBox.SelectedIndex);
                 UpdateListBox();
                 _projectSerializer.SaveToFile(_project);
             }
-            AllNotesListBox.SelectedIndex = currentIndex;
+            NotesListBox.SelectedIndex = currentIndex;
         }
 
         /// <summary>
@@ -179,7 +179,7 @@ namespace NoteApp.View
             }
             index = FindProjectIndex(index);
             var result = MessageBox.Show("Do you really want to remove " + "\"" + 
-                AllNotesListBox.SelectedItem.ToString() + "\"" +
+                NotesListBox.SelectedItem.ToString() + "\"" +
                 "?", "Deleting a note", MessageBoxButtons.OKCancel, MessageBoxIcon.Information);
             if (result == DialogResult.OK)
             {
@@ -196,13 +196,13 @@ namespace NoteApp.View
         /// </summary>
         private void AllNotesListBox_SelectedIndexChanged(object sender, EventArgs e)
         {
-            if (AllNotesListBox.SelectedIndex == -1)
+            if (NotesListBox.SelectedIndex == -1)
             {
                 ClearSelectedNote();
             }
             else
             {
-                UpdateSelectedNote(AllNotesListBox.SelectedIndex);
+                UpdateSelectedNote(NotesListBox.SelectedIndex);
             }
         }
 
@@ -231,7 +231,7 @@ namespace NoteApp.View
         /// </summary>
         private void DeleteNoteButton_Click(object sender, EventArgs e)
         {
-            RemoveNote(AllNotesListBox.SelectedIndex);
+            RemoveNote(NotesListBox.SelectedIndex);
             UpdateListBox();
         }
 
@@ -240,7 +240,7 @@ namespace NoteApp.View
         /// </summary>
         private void EditNoteButton_Click(object sender, EventArgs e)
         {
-            EditNote(AllNotesListBox.SelectedIndex);
+            EditNote(NotesListBox.SelectedIndex);
         }
 
         /// <summary>
@@ -248,7 +248,7 @@ namespace NoteApp.View
         /// </summary>
         private void RemoveNoteToolStripMenu_Click(object sender, EventArgs e)
         {
-            RemoveNote(AllNotesListBox.SelectedIndex);
+            RemoveNote(NotesListBox.SelectedIndex);
             UpdateListBox();
         }
         
@@ -283,7 +283,7 @@ namespace NoteApp.View
         /// </summary>
         private void EditNoteToolStripMenuItem_Click(object sender, EventArgs e)
         {
-            EditNote(AllNotesListBox.SelectedIndex);
+            EditNote(NotesListBox.SelectedIndex);
             UpdateListBox();
         }
 
