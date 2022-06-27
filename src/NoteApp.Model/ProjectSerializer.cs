@@ -14,12 +14,12 @@ namespace NoteApp.Model
     /// </summary>
     public class ProjectSerializer
     {
-        private static readonly string _path = Environment.GetFolderPath(Environment.SpecialFolder.ApplicationData) + "\\foi\\NoteApp";
-
         /// <summary>
-        /// Экземпляр класса потока.
+        /// Сохранение заметок.
         /// </summary>
-       // private Stream _stream;
+        private static readonly string _path = Environment.GetFolderPath
+            (Environment.SpecialFolder.ApplicationData) + "\\foi\\NoteApp";
+
 
         /// <summary>
         /// Путь до файла userdata.json.
