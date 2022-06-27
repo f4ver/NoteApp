@@ -150,7 +150,7 @@ namespace NoteApp.View
             // ExitItemStripMenu
             // 
             this.ExitItemStripMenu.Name = "ExitItemStripMenu";
-            this.ExitItemStripMenu.Size = new System.Drawing.Size(180, 22);
+            this.ExitItemStripMenu.Size = new System.Drawing.Size(93, 22);
             this.ExitItemStripMenu.Text = "Exit";
             this.ExitItemStripMenu.Click += new System.EventHandler(this.ExitToolStripMenu_Click);
             // 
@@ -167,21 +167,21 @@ namespace NoteApp.View
             // AddNoteItemsStripMenu
             // 
             this.AddNoteItemsStripMenu.Name = "AddNoteItemsStripMenu";
-            this.AddNoteItemsStripMenu.Size = new System.Drawing.Size(180, 22);
+            this.AddNoteItemsStripMenu.Size = new System.Drawing.Size(146, 22);
             this.AddNoteItemsStripMenu.Text = "Add Note";
             this.AddNoteItemsStripMenu.Click += new System.EventHandler(this.AddNoteToolStripMenuItem_Click);
             // 
             // EditNotesItemStripMenu
             // 
             this.EditNotesItemStripMenu.Name = "EditNotesItemStripMenu";
-            this.EditNotesItemStripMenu.Size = new System.Drawing.Size(180, 22);
+            this.EditNotesItemStripMenu.Size = new System.Drawing.Size(146, 22);
             this.EditNotesItemStripMenu.Text = "Edit Note";
             this.EditNotesItemStripMenu.Click += new System.EventHandler(this.EditNoteToolStripMenuItem_Click);
             // 
             // RemoveNoteItemStripMenu
             // 
             this.RemoveNoteItemStripMenu.Name = "RemoveNoteItemStripMenu";
-            this.RemoveNoteItemStripMenu.Size = new System.Drawing.Size(180, 22);
+            this.RemoveNoteItemStripMenu.Size = new System.Drawing.Size(146, 22);
             this.RemoveNoteItemStripMenu.Text = "Remove Note";
             this.RemoveNoteItemStripMenu.Click += new System.EventHandler(this.RemoveNoteToolStripMenu_Click);
             // 
@@ -196,7 +196,7 @@ namespace NoteApp.View
             // AboutItemsStripMenu
             // 
             this.AboutItemsStripMenu.Name = "AboutItemsStripMenu";
-            this.AboutItemsStripMenu.Size = new System.Drawing.Size(180, 22);
+            this.AboutItemsStripMenu.Size = new System.Drawing.Size(107, 22);
             this.AboutItemsStripMenu.Text = "About";
             this.AboutItemsStripMenu.Click += new System.EventHandler(this.AboutToolStripMenuItem_Click);
             // 
@@ -303,10 +303,14 @@ namespace NoteApp.View
             // 
             // NoteTextPlace
             // 
+            this.NoteTextPlace.Anchor = ((System.Windows.Forms.AnchorStyles)((((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Bottom) 
+            | System.Windows.Forms.AnchorStyles.Left) 
+            | System.Windows.Forms.AnchorStyles.Right)));
             this.NoteTextPlace.Location = new System.Drawing.Point(298, 99);
             this.NoteTextPlace.Multiline = true;
             this.NoteTextPlace.Name = "NoteTextPlace";
             this.NoteTextPlace.ReadOnly = true;
+            this.NoteTextPlace.ScrollBars = System.Windows.Forms.ScrollBars.Vertical;
             this.NoteTextPlace.Size = new System.Drawing.Size(490, 342);
             this.NoteTextPlace.TabIndex = 18;
             // 
