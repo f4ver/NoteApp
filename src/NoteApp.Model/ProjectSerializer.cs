@@ -35,10 +35,6 @@ namespace NoteApp.Model
             if (!(Directory.Exists(_path)))
             {
                 Directory.CreateDirectory(_path);
-                if (!File.Exists(FileName))
-                {
-                    File.Create(FileName);
-                }
             }
             JsonSerializer serializer = new JsonSerializer();
             using (var stream = File.Open(@FileName, FileMode.OpenOrCreate, FileAccess.Write))
@@ -61,10 +57,6 @@ namespace NoteApp.Model
             if (!(Directory.Exists(_path)))
             {
                 Directory.CreateDirectory(_path);
-                if (!File.Exists(FileName))
-                {
-                    File.Create(FileName);
-                }
             }
             try
             {

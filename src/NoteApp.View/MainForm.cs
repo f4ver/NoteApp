@@ -51,7 +51,6 @@ namespace NoteApp.View
         private int FindNotesIndex(int index)
         {
             return _project.Notes.IndexOf(_currentNotes[index]);
-
         }
 
         /// <summary>
@@ -299,11 +298,6 @@ namespace NoteApp.View
             ClearSelectedNote();
             OutputByCategory();
             UpdateListBox();
-        }
-
-        private void MainForm_Load(object sender, EventArgs e)
-        {
-
         }
     }
 }

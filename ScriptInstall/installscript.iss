@@ -38,8 +38,7 @@ Name: "desktopicon"; Description: "{cm:CreateDesktopIcon}"; GroupDescription: "{
 
 [Files]
 Source: "..\src\NoteApp.View\bin\Debug\{#MyAppExeName}"; DestDir: "{app}"; Flags: ignoreversion
-Source: "..\src\NoteApp.View\bin\Debug\Newtonsoft.Json.dll"; DestDir: "{app}"; Flags: ignoreversion
-Source: "..\src\NoteApp.View\bin\Debug\NoteApp.Model.dll"; DestDir: "{app}"; Flags: ignoreversion
+Source: "..\src\NoteApp.View\bin\Debug\*.dll"; DestDir: "{app}"; Flags: ignoreversion
 ; NOTE: Don't use "Flags: ignoreversion" on any shared system files
 
 [Registry]
